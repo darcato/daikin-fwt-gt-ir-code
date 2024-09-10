@@ -150,4 +150,4 @@ Swing: OFF
 
 The [Encode](./encode.ipynb) notebook contains the code to generate new commands and encode them following the IR protocol.
 
-The [SmartIR generator](./smartir_json_generator.ipynb) notebook is used to generate the [JSON file](./1120.json) for the [SmartIR](https://github.com/litinoveweedle/SmartIR) integration for Home Assistant.
+The [SmartIR generator](./smartir_json_generator.ipynb) notebook is used to generate the [JSON file](./3102.json) for the [SmartIR](https://github.com/litinoveweedle/SmartIR) integration for Home Assistant.
