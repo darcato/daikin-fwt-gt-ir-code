@@ -63,20 +63,20 @@ The code is composed of 64 bits on the body, organized into 16 nibbles (4 bits).
   <tr>
     <td>0001</td>
     <td>0110</td>
-    <td>0001</td>
-    <td>0001</td>
+    <td>1000</td>
+    <td>0100</td>
     <td>0000</td>
     <td>0000</td>
     <td>0001</td>
+    <td>0011</td>
+    <td>0001</td>
+    <td>0100</td>
+    <td>0001</td>
+    <td>0101</td>
     <td>0010</td>
-    <td>0000</td>
-    <td>0000</td>
-    <td>0000</td>
-    <td>0000</td>
-    <td>0001</td>
-    <td>0000</td>
-    <td>0000</td>
-    <td>0000</td>
+    <td>0100</td>
+    <td>1100</td>
+    <td>0100</td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:center;">Prefix</td>
