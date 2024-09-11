@@ -31,6 +31,84 @@ See the [Decode](./decode.ipynb) notebook for more details.
 
 The code is composed of 64 bits on the body, organized into 16 nibbles (4 bits).
 
+<table>
+  <tr>
+    <td colspan="2" style="text-align:center;">Byte0</td>
+    <td colspan="2" style="text-align:center;">Byte1</td>
+    <td colspan="2" style="text-align:center;">Byte2</td>
+    <td colspan="2" style="text-align:center;">Byte3</td>
+    <td colspan="2" style="text-align:center;">Byte4</td>
+    <td colspan="2" style="text-align:center;">Byte5</td>
+    <td colspan="2" style="text-align:center;">Byte6</td>
+    <td colspan="2" style="text-align:center;">Byte7</td>
+  </tr>
+  <tr>
+    <td>Nibble0</td>
+    <td>Nibble1</td>
+    <td>Nibble2</td>
+    <td>Nibble3</td>
+    <td>Nibble4</td>
+    <td>Nibble5</td>
+    <td>Nibble6</td>
+    <td>Nibble7</td>
+    <td>Nibble8</td>
+    <td>Nibble9</td>
+    <td>Nibble10</td>
+    <td>Nibble11</td>
+    <td>Nibble12</td>
+    <td>Nibble13</td>
+    <td>Nibble14</td>
+    <td>Nibble15</td>
+  </tr>
+  <tr>
+    <td>0001</td>
+    <td>0110</td>
+    <td>0001</td>
+    <td>0001</td>
+    <td>0000</td>
+    <td>0000</td>
+    <td>0001</td>
+    <td>0010</td>
+    <td>0000</td>
+    <td>0000</td>
+    <td>0000</td>
+    <td>0000</td>
+    <td>0001</td>
+    <td>0000</td>
+    <td>0000</td>
+    <td>0000</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;">Prefix</td>
+    <td>Fan mode</td>
+    <td>Mode</td>
+    <td colspan="4" style="text-align:center;">Clock</td>
+    <td colspan="2" style="text-align:center;">Time ON</td>
+    <td colspan="2" style="text-align:center;">Time OFF</td>
+    <td colspan="2" style="text-align:center;">Temperature</td>
+    <td>Checksum</td>
+    <td>Power</td>
+  </tr>
+  <tr>
+    <td>Always</td>
+    <td>Always</td>
+    <td>Auto, Low, Medium, High, Turbo, Quiet</td>
+    <td>Cool, Dry, Fan, Heat </td>
+    <td>Minutes tens</td>
+    <td>Minutes units</td>
+    <td>Hours tens</td>
+    <td>Hours units</td>
+    <td>Active + Halfhour + Hours tens</td>
+    <td>Hours units</td>
+    <td>Active + Halfhour + Hours tens</td>
+    <td>Hours units</td>
+    <td>Tens</td>
+    <td>Units</td>
+    <td>Sum(nibbles)%16</td>
+    <td>Power + Sleep + Swing</td>
+</table>
+
+
 #### Nibble 0, 1 - Prefix
 
 Always `0001 0110`
